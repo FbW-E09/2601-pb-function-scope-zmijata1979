@@ -1,17 +1,26 @@
-function numExp(num1, num2) {
-    let num3 = "";
-    if (typeof num1 === "number" && typeof num2 === "number") {
+function num(num1, num2) {
+     if (typeof num1 === "number" && typeof num2 === "number") {
+      return true;
 }
+else {
+  return false;
+}
+}
+
+console.log("Q1a.", num(3, 5));
+
+
+function numExp(num1, num2) {
+  let num3 = "";
     for (let i = 1; i <= num2; i++) {
       let number = num1 ** i;
-  
       num3 = num3 + " " + number;
     }
     return num3;
   }
-  console.log("Q1.", numExp(3, 5));
+  console.log("Q1b.", numExp(3, 5));
 
-  console.log("Q1.", numExp(2, 8));
+  console.log("Q1b.", numExp(2, 8));
 
   let myFruit = "maracuja";
 
